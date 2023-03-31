@@ -1,4 +1,6 @@
 clear all; close all;
+cd ..
+paths
 
 %Test to make sure energy is not created during collisions. Set to have no ocean/atmosphere interactions
 x1 = [2 2 5 5]*1e4; y1 = [2 5 5 2]*1e4;
