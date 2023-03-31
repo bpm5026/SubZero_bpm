@@ -1,6 +1,6 @@
 % clear all; close all;
-% cd ..
-% paths
+cd ..
+paths
 
 %Test to make sure energy is not created during collisions. Set to have no ocean/atmosphere interactions
 %test floes
