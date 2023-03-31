@@ -6,5 +6,7 @@ addpath('./plotting')
 addpath('./polygon_operations') 
 addpath('./Physical_Processes') 
 addpath('./private') 
+addpath('./test') 
+addpath('./test/test_conservation/') 
 end
 
