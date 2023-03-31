@@ -22,7 +22,7 @@ Floe2 = initialize_floe_values(poly2, height); Floe2.Ui = -0.1; Floe2.Vi = 0.02;
 
 
 % [K,~]=Subzero_conservation([Floe1;Floe2],0);
-K(1) = 1; K(2) = 0;
+[K,~]=Subzero_conservation([Floe1;Floe2],0);
 assert(K(end)/K(1)<1)
 % 
 % %%Two blocks crashing offset - rotation
