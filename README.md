@@ -13,10 +13,11 @@
     <img alt="Repo status" src="https://www.repostatus.org/badges/latest/active.svg?style=flat-square" />
   <a href="https://doi.org/10.5281/zenodo.7199941">
     <img alt="Zenodo" src="https://zenodo.org/badge/doi/10.5281/zenodo.7199941.svg">
+  <a href="https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml/badge.svg?branch=JOSS">
+    <img alt="GitHub Actions CI Status" src="https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml/badge.svg?branch=JOSS">
   </a>
 </p>
 
-    [![MATLAB](https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml/badge.svg?branch=JOSS)](https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml)
 
   
 This unique model uses parameterizations of floe-scale processes, such as collisions, fractures, ridging, and welding, to by pass resolving intra-floe bonded elements. We demonstrate the novel capabilities of the SubZero model in idealized experiments, including uniaxial compression, the summer-time sea ice flow through the Nares Strait and a winter-time equilibration of floe size and
