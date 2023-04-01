@@ -29,11 +29,20 @@ classdef ConservationTestExample < matlab.unittest.TestCase
           %[K,T] = energy([Floe1;Floe2],0)
           assert(K(end)/K(1)<1)
             
-%             % Compute actual result
-%             doyActual = dayofyear(dateStr);
-%             
-%             % Verify that the actual result matches the expected result
-%             testCase.verifyEqual(doyActual,doyExpected)
+          %%Two blocks crashing offset - rotation
+          Floe1 = initialize_floe_values(translate(poly1,[0 1e4]), height); Floe1.Ui = 0.11; Floe1.Vi = 0.02;
+          Floe2 = initialize_floe_values(poly2, height); Floe2.Ui = -0.1; Floe2.Vi = 0.02;
+
+          [K,~]=Subzero_conservation([Floe1;Floe2],0);
+          assert(K(end)/K(1)<1)
+
+          %%Two rectangular boxes with a triangle inbetween causing rotation
+          Floe1 = initialize_floe_values(poly1, height); Floe1.Ui = 0.11; Floe1.Vi = 0.001;
+          Floe2 = initialize_floe_values(poly2, height); Floe2.Ui = -0.1; Floe2.Vi = 0.001;
+          Floe3 = initialize_floe_values(poly3, height); Floe3.Ui = -0; Floe3.Vi = 0.001;
+
+          [K,~]=Subzero_conservation([Floe1;Floe2;Floe3],0);
+          assert(K(end)/K(1)<1)
         end
     end
     
