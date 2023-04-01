@@ -26,7 +26,7 @@ classdef ConservationTestExample < matlab.unittest.TestCase
 
 
           % [K,~]=Subzero_conservation([Floe1;Floe2],0);
-          K(1) = 1; K(2) = 0;%[K,T] = energy([Floe1;Floe2],0)
+          [K,T] = energy([Floe1;Floe2],0)
           assert(K(end)/K(1)<1)
             
 %             % Compute actual result
