@@ -16,7 +16,7 @@
   </a>
 </p>
 
-    [![MATLAB](https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml/badge.svg?branch=JOSS))](https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml)
+    [![MATLAB](https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml/badge.svg?branch=JOSS)](https://github.com/bpm5026/SubZero_bpm/actions/workflows/ci.yml)
 
   
 This unique model uses parameterizations of floe-scale processes, such as collisions, fractures, ridging, and welding, to by pass resolving intra-floe bonded elements. We demonstrate the novel capabilities of the SubZero model in idealized experiments, including uniaxial compression, the summer-time sea ice flow through the Nares Strait and a winter-time equilibration of floe size and
